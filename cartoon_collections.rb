@@ -19,10 +19,13 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  bool = array.include?(cheese_types)
+  count = 0
+ 3.times do
+  bool = array.include?(cheese_types[count])
   if bool
-    "cheddar"
-  else
-    nil
+    return cheese_types[count]
   end
+  count += 1
+end
+return nil
 end
