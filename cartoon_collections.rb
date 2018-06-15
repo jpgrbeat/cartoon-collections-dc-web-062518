@@ -21,5 +21,9 @@ def find_the_cheese(array)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   bool = array.include?(cheese_types)
   if bool
-    
+    "cheddar"
+  else
+    nil
+  end
+end
 end
